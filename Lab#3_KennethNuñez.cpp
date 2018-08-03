@@ -50,6 +50,7 @@ int main() {
 				ejercicio3(lines);
 				}
 				break;
+
 			default:
 				cout << "Opcion Invalida" << endl;
 				break;
@@ -143,10 +144,13 @@ void ejercicio2(){
 }
 
 void ejercicio3(int lines){
-	for(int i = lines; i > 0; i--){
-		cout << setw(i);
-		
-		
+	for(int i = 0; i < lines; i++){
+		int width = lines - i;
+		cout << setw(width);
+		for(int j = 0; j < i; j++){
+			cout << "*";
+		}
+		cout << endl;
 		
 	}
 
