@@ -147,7 +147,8 @@ void ejercicio3(int lines){
 	for(int i = 0; i < lines; i++){
 		int width = lines - i;
 		cout << setw(width);
-		for(int j = 0; j < i; j++){
+		cout << "*";
+		for(int j = 0; j < i * 2; j++){
 			cout << "*";
 		}
 		cout << endl;
