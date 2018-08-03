@@ -9,6 +9,8 @@ using std::string;
 #include<math.h>
 #define PI 3.14159265
 
+#include <iomanip>
+using std::setw;
 void ejercicio1();
 void ejercicio2();
 int factorial(int numero){
@@ -18,6 +20,7 @@ int factorial(int numero){
 	}
 	return acumulador;
 }
+void ejercicio3(int);
 
 
 int main() {
@@ -40,6 +43,12 @@ int main() {
 				break;
 
 			case 3:
+				{
+				cout << "Ingrese el numero de lineas" << endl;
+				int lines = 0;
+				cin >> lines;
+				ejercicio3(lines);
+				}
 				break;
 			default:
 				cout << "Opcion Invalida" << endl;
@@ -133,8 +142,15 @@ void ejercicio2(){
 	
 }
 
-void ejercicio3(){
+void ejercicio3(int lines){
+	for(int i = lines; i > 0; i--){
+		cout << setw(i);
+		
+		
+		
+	}
 
+	
 }
 
 
